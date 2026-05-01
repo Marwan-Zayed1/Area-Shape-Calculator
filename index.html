@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Area Shape Calculator</title>
+  </head>
+  <body>
+    <h1>Area Shape Calculator</h1>
+    <img src="" class="image" id="image" />
+    <main class="flex justify-center items-center flex-col gap-4">
+      <div class="flex justify-center items-center gap-4 w-[75%]">
+        <input type="text" placeholder="الطول" class="input" id="num1" />
+
+        <input type="text" placeholder="العرض" class="input" id="num2" />
+        <select
+          class="select w-50"
+          id="shapeArea"
+          onchange="changePlaceholder()"
+        >
+          <option value="choose">Choose</option>
+          <option value="rectangle">rectangle المستطيل</option>
+          <option value="square">المربع (Square)</option>
+          <option value="triangle">المثلث (Triangle)</option>
+          <option value="circle">الدائرة (Circle)</option>
+          <option value="Trapezoid">شبه المنحرف (Trapezoid)</option>
+          <option value="Rhombus">المعين (Rhombus)</option>
+          <option value="Parallelogram">متوازي الاضلاع (Parallelogram)</option>
+        </select>
+
+        <span>=</span>
+        <input
+          type="text"
+          placeholder="Results النتيجة"
+          class="input"
+          disabled
+          id="result"
+        />
+      </div>
+
+      <button class="btn btn-outline btn-primary w-[75%]" onclick="calculate()">
+        Calculate احسب
+      </button>
+    </main>
+  </body>
+
+  <script src="./script.js"></script>
+</html>
