@@ -11,33 +11,33 @@ function changePlaceholder() {
     num1.placeholder = "num1";
     num2.placeholder = "num2";
   } else if (shapeArea === "rectangle") {
-    image.src = "../img/المستطيل.jpg";
+    image.src = "img/1.jpg";
     num1.placeholder = "الطول";
     num2.placeholder = "العرض";
   } else if (shapeArea === "square") {
-    image.src = "../img/OIP.webp";
+    image.src = "img/2.png";
     num1.placeholder = "طول الضلع";
     num2.style.display = "none";
   } else if (shapeArea === "triangle") {
-    image.src = "../img/OIP (1).webp";
+    image.src = "img/3.png";
     num1.placeholder = "القاعدة";
     num2.placeholder = "الارتفاع";
     num2.style.display = "inline";
   } else if (shapeArea === "circle") {
-    image.src = "../img/istockphoto-1354316616-612x612.jpg";
+    image.src = "img/4.jpg";
     num1.placeholder = "نصف القطر";
     num2.style.display = "none";
   } else if (shapeArea === "Trapezoid") {
-    image.src = "../img/مساحة-شبه-المنحرف.jpg";
+    image.src = "img/5.jpg";
     num1.placeholder = "مجموع القاعدتين";
     num2.placeholder = "الارتفاع";
   } else if (shapeArea === "Rhombus") {
-    image.src = "../img/almisahat-madrassatii_002.jpg";
+    image.src = "img/6.jpg";
     num1.placeholder = "القطر الاول";
     num2.placeholder = "القطر الثاني";
     num2.style.display = "inline";
   } else if (shapeArea === "Parallelogram") {
-    image.src = "../img/OIP.jfif";
+    image.src = "img/7.png";
     num1.placeholder = "القاعده";
     num2.placeholder = "الارتفاع";
   }
